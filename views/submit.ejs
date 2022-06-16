@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <div class="jumbotron centered">
+    <img class="logo-sm" src="images/logo.png" />
+    <p class="lead">Don't keep your secret. Share your secret anonymously!</p>
+    <p class="lead">
+      Your secret will disappear after 24 hours. This is your safe space.
+    </p>
+    <form action="/submit" method="POST">
+      <div class="form-group">
+        <textarea
+          type="text"
+          class="form-control text-center"
+          name="secret"
+          placeholder="What's your secret?"
+          autocomplete="off"
+          cols="20"
+          rows="5"
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-info">SUBMIT MY SECRET</button>
+    </form>
+  </div>
+</div>
+<%- include('partials/footer') %>

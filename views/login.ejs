@@ -1,0 +1,43 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5 form-signin">
+  <h1>Login</h1>
+  <div class="card">
+    <div class="card-body">
+      <!-- Makes POST request to /login route -->
+      <form action="/login" method="POST">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            name="username"
+            autocomplete="off"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" name="password" />
+        </div>
+        <button type="submit" class="btn btn-block btn-info">LOGIN</button>
+      </form>
+    </div>
+    <div class="card-body">
+      <p class="centered">Or</p>
+      <a class="btn btn-block btn-danger" href="/auth/google" role="button">
+        <i class="fab fa-google mr-2"></i>
+        LOG IN WITH GOOGLE
+      </a>
+      <a
+        class="btn btn-block btn-primary btn-fb"
+        href="/auth/facebook"
+        role="button"
+      >
+        <i class="fab fa-facebook-f mr-2"></i>
+        LOG IN WITH FACEBOOK
+      </a>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

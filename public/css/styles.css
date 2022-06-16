@@ -1,0 +1,52 @@
+body {
+  background-color: #e8ecef;
+}
+
+.form-signin {
+  max-width: 500px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.logo-lg {
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.logo-sm {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 32px;
+}
+
+.jumbotron {
+  padding-top: 32px;
+}
+
+.secret-text {
+  text-align: left;
+  padding-left: 15px;
+  font-size: 1.4rem;
+  background-color: #feccbe;
+  font-weight: 300;
+  color: darkslategrey;
+}
+
+.heading {
+  color: #3a9d88;
+}
+
+.btn-info {
+  background-color: #3a9d88;
+}
+
+.btn-fb {
+  background-color: #3b5998;
+}
+
+.btn-fb:hover {
+  background-color: #344e86;
+}
